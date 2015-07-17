@@ -1,0 +1,12 @@
+// var, mixin, other imports
+@import 'var';
+@import 'mixins';
+
+// browser reset
+@import 'reset';
+
+// gets lead image
+@import 'special';
+
+// specfic styling for projects
+@import 'styles/!manifest';

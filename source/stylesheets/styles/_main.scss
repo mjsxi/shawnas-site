@@ -1,0 +1,80 @@
+body {
+  line-height: 1.75em;
+  color: $default-font-color;
+}
+
+img,
+video {
+  width:100%;
+}
+
+.m-article {
+  padding-bottom: 1em;
+}
+
+.m-lead {
+  height: 0%;
+  padding-bottom: 54%;
+  background-size: cover;
+}
+
+.m-content-container {
+  margin: 2.25% 0%;
+  // position: relative;
+  .m-content {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .m-title {
+    // position: absolute;
+    // top: -14.5%;
+  }
+  img,
+  video {
+    margin: 2em 0em;
+  }
+  h1 {
+    font-family: $display;
+    font-size: 4em;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1em;
+    margin-top: .65em;
+    margin-bottom: .25em;
+  }
+  h2 {
+    font-family: $display;
+    font-size: 1.25em;
+    font-weight: 500;
+    margin-bottom: 2em;
+  }
+  p {
+    font-family: $main;
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+.quote-left,
+.quote-right {
+  width: 40%;
+  p {
+    font-family: $display;
+    color: lighten($default-font-color,25%);
+    font-size: 2em;
+    line-height: 1.1em;
+    margin-bottom: .5em;
+  }
+}
+
+.quote-left {
+  float: left;
+  padding-right: 5%;
+  margin-left: -15%;
+}
+
+.quote-right {
+  float: right;
+  padding-left: 5%;
+  margin-right: -15%;
+}
