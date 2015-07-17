@@ -24,6 +24,15 @@ video {
   .m-content {
     width: 50%;
     margin: 0 auto;
+    @media (max-width: 1200px) {
+      width: 70%;
+    }
+    @media (max-width: 900px) {
+      
+    }
+    @media (max-width: 600px) {
+      width: 90%;
+    }
   }
   .m-title {
     // position: absolute;
@@ -41,12 +50,21 @@ video {
     line-height: 1em;
     margin-top: .65em;
     margin-bottom: .25em;
+    @media (max-width: 900px) {
+      font-size: 3em;
+    }
+    @media (max-width: 600px) {
+      font-size: 2em;
+    }
   }
   h2 {
     font-family: $display;
     font-size: 1.25em;
     font-weight: 500;
     margin-bottom: 2em;
+    @media (max-width: 900px) {
+      font-size: 1em;
+    }
   }
   p {
     font-family: $main;
@@ -65,16 +83,35 @@ video {
     line-height: 1.1em;
     margin-bottom: .5em;
   }
+  @media (max-width: 1200px) {
+    
+  }
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    
+  }
 }
 
 .quote-left {
   float: left;
   padding-right: 5%;
   margin-left: -15%;
+  @media (max-width: 900px) {
+    float: none;
+    padding-right: 0%;
+    margin-left: 0%;
+  }
 }
 
 .quote-right {
   float: right;
   padding-left: 5%;
   margin-right: -15%;
+  @media (max-width: 900px) {
+    float: none;
+    padding-left: 0%;
+    margin-right: 0%;
+  }
 }
