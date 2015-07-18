@@ -29,6 +29,14 @@ a {
   }
 }
 
+i {
+  font-style: italic;
+}
+
+b {
+  font-weight: 700;
+}
+
 .m-article {
   padding-bottom: 1em;
 }
@@ -94,8 +102,28 @@ a {
   }
 }
 
+.trigger {
+  background-color: lighten($red,15%);
+  color: $white;
+  padding: .5em 1em;
+  margin-bottom: 1em;
+  p {
+    font-family: $display;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+}
+
 .m-links {
   font-size: 2em;
+  @media (max-width: 600px) {
+    font-size: 1.25em;
+  }
+  a {
+    display: block;
+    margin-bottom: .5em;
+  }
 }
 
 .quote-left,
@@ -138,5 +166,18 @@ a {
     float: none;
     padding-left: 0%;
     margin-right: 0%;
+  }
+}
+
+.block-quote {
+  margin-bottom: 1em;
+  p {
+    font-family: $display;
+    color: lighten($default-font-color,25%);
+    font-size: 2em;
+    line-height: 1.1em;
+    margin-bottom: 0;
+    font-style: italic;
+    font-weight: 700;
   }
 }
