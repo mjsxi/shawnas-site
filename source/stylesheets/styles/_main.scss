@@ -1,3 +1,7 @@
+*{
+  @include vendor-prefix(transition, all .3s);
+}
+
 body {
   line-height: 1.75em;
   color: $default-font-color;
@@ -6,6 +10,23 @@ body {
 img,
 video {
   width:100%;
+}
+
+hr {
+  margin: 3em 0em;
+  border: none;
+  border-bottom: 1px solid $default-font-color;
+}
+
+a {
+  font-family: $display;
+  font-style: italic;
+  font-weight: 600;
+  text-decoration: none;
+  color: lighten($default-font-color,25%);
+  &:hover {
+    color: $default-font-color;
+  }
 }
 
 .m-article {
@@ -71,6 +92,10 @@ video {
     font-size: 1em;
     margin-bottom: 1em;
   }
+}
+
+.m-links {
+  font-size: 2em;
 }
 
 .quote-left,
