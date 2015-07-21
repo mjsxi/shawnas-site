@@ -37,6 +37,22 @@ b {
   font-weight: 700;
 }
 
+.m-back {
+  background-image: image-url("back_arrow.png");
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 75px; 
+  width: 75px;
+  background-color: $white;
+  border-radius: 50%;
+  @media (max-width: 600px) {
+    height: 45px; 
+    width: 45px;
+  }
+}
+
 .m-article {
   padding-bottom: 1em;
 }
@@ -52,6 +68,7 @@ b {
   // position: relative;
   .m-content {
     width: 50%;
+    max-width: 650px;
     margin: 0 auto;
     @media (max-width: 1200px) {
       width: 70%;
