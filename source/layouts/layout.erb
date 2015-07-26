@@ -11,6 +11,7 @@
     <title><%= current_page.data.title %></title>
     <meta name="description" content="<%= current_page.data.description %>">
 
+    <%= javascript_include_tag  "head" %>
     <%= stylesheet_link_tag "style" %>
   </head>
 
@@ -19,6 +20,6 @@
       <a class="m-back" href="http://shawnasullivan.com/"></a>
       <%= yield %>
     </div>
-    <%= javascript_include_tag  "main" %>
+    <%= javascript_include_tag  "body" %>
   </body>
 </html>
